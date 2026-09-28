@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GEEKMANIAC — Informação, tecnologia e cultura geek</title>
+
+    <meta name="description" content="GEEKMANIAC — informação, tecnologia, cultura geek, produtos, ideias e descobertas.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111111;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #000000;
+            border-bottom: 3px solid #e60000;
+            padding: 22px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #e60000;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e60000;
+        }
+
+        .hero {
+            padding: 90px 7%;
+            background: linear-gradient(135deg, #171717, #050505);
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #e60000;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 20px;
+            color: #cccccc;
+        }
+
+        .section {
+            padding: 60px 7%;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #1c1c1c;
+            border: 1px solid #333333;
+            border-radius: 12px;
+            padding: 28px;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #e60000;
+        }
+
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #bbbbbb;
+        }
+
+        .info {
+            background: #181818;
+            border-left: 4px solid #e60000;
+            padding: 25px;
+            margin-top: 30px;
+            color: #cccccc;
+        }
+
+        footer {
+            background: #000000;
+            border-top: 1px solid #333333;
+            padding: 30px 7%;
+            color: #888888;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">GEEK<span>MANIAC</span></div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <h1>
+                O universo geek,
+                <span>do nosso jeito.</span>
+            </h1>
+
+            <p>
+                Informação, tecnologia, cultura geek, descobertas,
+                produtos interessantes e ideias que valem a pena conhecer.
+            </p>
+        </section>
+
+        <section class="section" id="categorias">
+
+            <h2>Explore o universo GEEKMANIAC</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>💻 Tecnologia</h3>
+                    <p>
+                        Gadgets, acessórios, ferramentas e novidades
+                        que podem facilitar o dia a dia.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🎮 Games</h3>
+                    <p>
+                        Jogos, acessórios, curiosidades e tudo aquilo
+                        que faz parte do universo gamer.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🤖 Geek</h3>
+                    <p>
+                        Cultura geek, filmes, séries, personagens,
+                        colecionáveis e muito mais.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🛠️ Faça Você Mesmo</h3>
+                    <p>
+                        Projetos, ferramentas, impressão 3D,
+                        ideias e soluções para colocar a mão na massa.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🔎 Achados</h3>
+                    <p>
+                        Produtos interessantes que encontramos
+                        e que podem merecer sua atenção.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>💡 Ideias</h3>
+                    <p>
+                        Inspirações, comparações, dicas e descobertas
+                        para quem gosta de experimentar coisas novas.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="info">
+                <strong>Como funciona?</strong><br><br>
+
+                O GEEKMANIAC é um site informativo.
+                Aqui você encontra informações, opiniões, ideias
+                e referências sobre produtos e assuntos do universo geek.
+
+                Quando encontrarmos algo interessante, você poderá
+                acessar o produto através do link disponibilizado
+                no conteúdo.
+            </div>
+
+        </section>
+
+        <section class="section" id="sobre">
+
+            <h2>Sobre o GEEKMANIAC</h2>
+
+            <p style="max-width: 750px; color: #cccccc;">
+                O GEEKMANIAC nasceu da vontade de descobrir,
+                testar, aprender e compartilhar coisas interessantes.
+
+                Tecnologia, impressão 3D, games, cultura geek,
+                ferramentas, produtos e ideias fazem parte desse universo.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 GEEKMANIAC — Informação, tecnologia e cultura geek.
+    </footer>
+
+</body>
+</html>
